@@ -1,10 +1,9 @@
-let produceDrivingRange = function(blockRange) {
-  return function(range1, range2) {
-    let range = parseInt(range1) - parseInt(range2)
-    if (true) {
-      if (Math.abs(range) > blockRange) {
-        let outOfRange = Math.abs(range) - blockRange
-        return `${outOfRange} blocks out of range`;
+function produceDrivingRange(blockRange) {
+  return function(rg1, rg2) {
+    let range = parseInt(rg1) - parseInt(rg2)
+    if (Math.abs(range) > blockRange) {
+      let outOfRange = Math.abs(range) - blockRange
+      return `${outOfRange} blocks out of range`;
     } else {
       return `within range by ${Math.abs(range)}`;
     }
